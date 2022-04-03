@@ -525,7 +525,7 @@ Saya perlu menjadi admin dengan beberapa izin:
 <b>🏷️ Nama: [{title[:25]}]({link})</b>
 <b>⏱️ Durasi:</b> {duration} \n
 <b>🎧 Atas permintaan: </b>{checking}
-<b>ᴏᴡɴᴇʀ {OWNER_NAME}?start=info_{id})<b>ᴏᴡɴᴇʀ {OWNER_NAME}?start=info_{id})
+<b>ᴏᴡɴᴇʀ {OWNER_NAME} \n
 
 <b>#️⃣ Posisi antrian</b> {position}
 """,
@@ -565,6 +565,7 @@ Saya perlu menjadi admin dengan beberapa izin:
 <b>🏷 Nama:</b> [{title[:25]}]({link})
 <b>⏱️ Durasi:</b> {duration}
 <b>🎧 Atas permintaan:</b> {checking}
+<b>ᴏᴡɴᴇʀ {OWNER_NAME} \n
 """,
         )
         return await mystic.delete()
@@ -718,7 +719,7 @@ async def startyuplay(_, CallbackQuery):
 <b>⏱️ Durasi:</b> {duration}
 <b>💡</b> [More Information](https://t.me/{BOT_USERNAME}?start=info_{id})
 <b>🎧 Atas permintaan:</b> {checking}
-
+<b>ᴏᴡɴᴇʀ {OWNER_NAME} \n
 <b>#️⃣ Posisi antrian</b> {position}
 """,
             reply_markup=InlineKeyboardMarkup(buttons),
@@ -747,7 +748,7 @@ async def startyuplay(_, CallbackQuery):
 <b>⏱️ Durasi:</b> {duration}
 <b>💡</b> [More Information](https://t.me/{BOT_USERNAME}?start=info_{id})
 <b>🎧 Atas permintaan:</b> {checking}
-<b>ᴏᴡɴᴇʀ {OWNER_NAME}?start=info_{id})
+<b>ᴏᴡɴᴇʀ {OWNER_NAME} \n
 """,
         )
         os.remove(thumb)
